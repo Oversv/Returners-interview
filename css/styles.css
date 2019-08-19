@@ -19,7 +19,6 @@ html {
     --second-color:#00334e;
     --third-color:#5588a3;
 }
-
 body{
     font-family: 'Open Sans', sans-serif;
     line-height: 1.4;
@@ -134,9 +133,6 @@ li{
 .max-viewport{
     height: 100vh;
 }
-.margin-bot{
-    margin-bottom: 1.5rem;
-}
 .center{
     text-align: center;    
 }
@@ -168,7 +164,17 @@ li{
         display: block;
     }
 }
-/***END GENERAL***/
+.img-phone-scale{
+    transform:scale(1.1);
+    margin: 1.5rem 0;
+    
+}
+@media (min-width: 500px){
+    .img-phone-scale{
+        transform:none;
+        margin: 0;
+    }
+}
 
 /*** HEADER ***/
 .header{
@@ -200,6 +206,7 @@ header div{
         height: 75px;      
     }
 }
+
 /*** NAV ***/
 .nav-list{
     display: flex; 
@@ -231,10 +238,7 @@ header div{
 .nav-list li:hover{
     border-bottom: 2px solid var(--main-color);
 }
-.main-index{
-    width: 80%;
-    margin: 0.5rem auto;
-}
+
 .main{
     width: 92%;
     margin: 0.5rem auto;
@@ -273,17 +277,11 @@ header div{
     }
 }
 /*** Index ***/
-.index-links{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.index-videogames, .index-esports{   
-    height: 150px;
-    width: 300px;
-    margin: 2rem;       
-    border-radius: 10px;
-    overflow: hidden;
+@media (min-width: 500px){
+    .img-index{
+        width: 75%;
+        margin: 1rem auto;
+    }
 }
 /*** E-Sports ***/
 .teams{
@@ -322,8 +320,13 @@ header div{
     font-weight: 700;    
 }
 .div-video-bestMoments{
-    width: 80%; 
-    margin: 1rem auto;
+    width: 100%; 
+    margin: 1.5rem auto;
+}
+@media (min-width: 500px){
+    .div-video-bestMoments{
+        width: 80%;
+    }
 }
 
 /*** ASIDE ***/
